@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mother's Tiffin</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-card">
+            <h1>Welcome to Mother's Tiffin</h1>
+            <p class="tagline">Where homemade meets happiness!</p>
+            
+            <div class="choice-buttons">
+                <button class="choice-btn eat" onclick="window.location.href='client-signup.html'">
+                    <span class="emoji">🍱</span>
+                    <span class="text">I want to eat delicious homemade food</span>
+                </button>
+                <button class="choice-btn serve" onclick="window.location.href='mother-signup.html'">
+                    <span class="emoji">👩‍🍳</span>
+                    <span class="text">I want to serve my delicious food</span>
+                </button>
+            </div>
+
+            <div class="login-section">
+                <p>Already have an account?</p>
+                <button class="login-btn" onclick="document.getElementById('login-modal').style.display='block'">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('login-modal').style.display='none'">&times;</span>
+            <h2>Choose Login Type</h2>
+            <div class="login-choices">
+                <button onclick="window.location.href='client-login.html'" class="login-choice-btn">
+                    <span class="emoji">🍽️</span>
+                    Login as Customer
+                </button>
+                <button onclick="window.location.href='mother-login.html'" class="login-choice-btn">
+                    <span class="emoji">👩‍🍳</span>
+                    Login as Mother
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
